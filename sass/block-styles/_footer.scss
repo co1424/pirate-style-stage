@@ -1,6 +1,4 @@
 .page-footer {
-  --logomark-height: 2em;
-  --logomark-padding: 0;
 
   position: relative;
   padding: 3rem 1rem;
@@ -11,8 +9,6 @@
   color: var(--color-light);
 
   &::before {
-    @include logomark;
-
     position: absolute;
     left: 50%;
     width: 2em;

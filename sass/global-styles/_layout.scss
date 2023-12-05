@@ -1,6 +1,9 @@
 // stylelint-disable no-descending-specificity
 body {
   background-color: var(--color-background);
+  // position: fixed;
+  background-image: $background-image;
+  background-size: cover;
   color: var(--color-text);
   font-family: var(--font-family);
 }

@@ -3,6 +3,7 @@ $color-primary: #FEAA01 !default;
 $color-secondary: #805C13 !default;
 $color-background: #FEDB96 !default;
 $color-text: #000000 !default;
+$background-image: url('../../public/images/treasure-map.jpg');
 
 $brand-colors: (
   primary: $color-primary,
@@ -15,14 +16,14 @@ $color-body: scale-color(
   $lightness: -30%,
   $saturation: -50%
 ) !default;
-$color-gray: mix(#767676, $color-body, 70%) !default;
+// $color-gray: mix(#767676, $color-body, 70%) !default;
 
 $colors: map-merge(
   $brand-colors,
   (
     background: $color-background,
     text: $color-body,
-    light: #ffff,
+    light: #dcad6a,
   )
 );
 

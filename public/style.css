@@ -76,14 +76,18 @@ select {
   }
 }
 body {
-  background-color: var(--color-background);
-  background-image: url("../../public/images/treasure-map.jpg");
-  background-size: cover;
+  background-color: #FEDB96;
+  background-image: url("/images/treasure-map.svg");
+  height: 100%;
   color: var(--color-text);
   font-family: var(--font-family);
+  background-repeat: no-repeat;
 }
 
 main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
   padding-top: 5vh;
   padding-bottom: 5vh;
 }

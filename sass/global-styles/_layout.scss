@@ -4,12 +4,15 @@ body {
   // opacity: 50%;
   // position: fixed;
   background-image: $background-image;
+  // background-image: $background-image2;
+  // background-image: $background-image3;
+  
   // width: 100%;
   // background-size: cover;
   height: 100%;
   color: var(--color-text);
   font-family: var(--font-family);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 

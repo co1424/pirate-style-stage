@@ -77,11 +77,11 @@ select {
 }
 body {
   background-color: #FEDB96;
-  background-image: url("/images/treasure-map.svg");
+  background-image: url("/images/background2.jpg");
   height: 100%;
   color: var(--color-text);
   font-family: var(--font-family);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 main {

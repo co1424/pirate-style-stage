@@ -77,17 +77,22 @@ select {
 }
 body {
   background-color: #FEDB96;
-  background-image: url("/images/background2.jpg");
-  height: 100%;
+  background: url("/images/background2.jpg") repeat fixed;
+  background-size: 100%;
   color: var(--color-text);
   font-family: var(--font-family);
-  background-repeat: repeat;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+  margin: 0;
+  position: relative;
 }
 
 main {
   margin-left: auto;
   margin-right: auto;
-  width: 900px;
+  width: 1200px;
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
@@ -96,6 +101,18 @@ main:focus {
 }
 main h3 {
   color: var(--color-primary);
+}
+
+body::after {
+  content: " ";
+  background: url("/images/bigIsland.svg") 62% 85% no-repeat fixed, url("/images/bean.svg") 39% 60% no-repeat, url("/images/left.svg") 32.5% 75% no-repeat, url("/images/line.svg") 33% 70% no-repeat, url("/images/lines.svg") 62% 84% no-repeat, url("/images/line3.svg") 40% 54% no-repeat, url("/images/lines2.svg") 65% 50% no-repeat, url("/images/lines4.svg") 44% 33% no-repeat, url("/images/right.svg") 67.2% 60% no-repeat, url("/images/small.svg") 60% 50% no-repeat, url("/images/top.svg") 43% 34.2% no-repeat, url("/images/top3.svg") 35% 33% no-repeat, url("/images/topRight.svg") 67% 45% no-repeat;
+  background-size: 10%, 8%, 3%, 3%, 4%, 3%, 3%, 3%, 2%, 3%, 10%, 8%, 5%, 5%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-3px) scale(11.1);
 }
 
 article section {

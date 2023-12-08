@@ -1,0 +1,193 @@
+// stylelint-disable no-descending-specificity
+body {
+  
+
+    background-color: $color-background;
+  
+    background: 
+    // right, top, bottom, left
+    // $bigIsland 100% 90% no-repeat, 
+    // $bean 22% 7% no-repeat, 
+    // $bean 10% 78% no-repeat, 
+    // $left left no-repeat, 
+    // $line 43% 6.5% no-repeat, 
+    // $lines 80% 92% no-repeat, 
+    // $line3 50% 50% no-repeat, 
+    // $lines2 30% 30% no-repeat, 
+    // $lines4 80% 20% no-repeat, 
+    // $right right no-repeat, 
+    // $small 70% 30% no-repeat, 
+    // $top 60% 0 no-repeat, 
+    // // $top2 top right no-repeat, 
+    // $top3 top left no-repeat, 
+    // $topbig 38% 61.5% no-repeat, 
+    // $topRight 100% 20% no-repeat,
+    $background-image repeat fixed;
+    background-size: 
+    // 50%,
+    // 15%,
+    // 30%,
+    // 10%,
+    // 10%,
+    // 10%,
+    // 10%,
+    // 10%,
+    // 10%,
+    // 10%,
+    // 10%,
+    // 30%,
+    // // 10%,
+    // 20%,
+    // 10%,
+    // 10%,
+    100%;
+    
+    // width: 100%;
+    // background-size: cover;
+    color: var(--color-text);
+    font-family: var(--font-family);
+  
+    // from the internet tutorial
+    height: 100vh;
+  
+    overflow-x: hidden;
+    overflow-y: auto;
+  
+    perspective: 1px;
+    margin:0;
+    position: relative;
+  }
+  
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  
+    &:focus {
+      outline: none;
+    }
+  
+    h3 {
+      color: var(--color-primary);
+    }
+    // position: relative;
+    // transform: translateZ(-1px) scale(3);
+  }
+  
+  body::after{
+    content: " ";
+    background: $ship 82% 70% no-repeat fixed;
+    
+    background-size: 20%;
+    background: 
+    $bigIsland 100% 90% no-repeat fixed, 
+    $bean 22% 7% no-repeat, 
+    $bean 10% 150% no-repeat, 
+    $left left no-repeat, 
+    $line 43% 6.5% no-repeat, 
+    $lines 80% 92% no-repeat, 
+    $line3 50% 50% no-repeat, 
+    $lines2 30% 30% no-repeat, 
+    $lines4 80% 20% no-repeat, 
+    $right right no-repeat, 
+    $small 70% 30% no-repeat, 
+    $top 60% 0 no-repeat, 
+    // $top2 top right no-repeat, 
+    $top3 top left no-repeat, 
+    $topbig 38% 61.5% no-repeat, 
+    $topRight 100% 20% no-repeat,
+    ;
+    background-size: 50%,
+    15%,
+    30%,
+    10%,
+    10%,
+    10%,
+    10%,
+    10%,
+    10%,
+    10%,
+    10%,
+    30%,
+    // 10%,
+    20%,
+    10%,
+    10%,;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-3px) scale(4.1);
+  
+  }
+  
+  // main {
+  //   position: relative;
+  // }
+  
+  // main::before {
+  //   content: '';
+  //   background: $ship 80% 90% no-repeat fixed;
+  //   background-size: 20%;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%; /* Set the height to full viewport height */
+  //   z-index: 99; /* Move the pseudo-element behind the main content */
+  //   animation: rotate 5s ease infinite;
+  //   // transform: scaleX(-1);
+  // }
+  // @keyframes rotate {
+  //   0%, 100% {
+  //     transform: translateX(0em);
+  //   }
+  //   50% {
+  //     transform: translateX(2em);
+  //   }
+  // }
+  
+  
+  article {
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 5vh;
+      padding-bottom: 5vh;
+    }
+  }
+  
+  article,
+  .page-footer,
+  #styles {
+    .container {
+      width: 100%;
+      max-width: 80ch;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  
+  article,
+  #styles {
+    padding: 1rem;
+  }
+  
+  .page-footer ul,
+  .features {
+    display: grid;
+    margin: 0 0 2rem;
+    padding: 0;
+    grid-gap: 1em;
+    list-style: none;
+  }
+  
+  // header ,nav,main,aside,footer{
+  //   // transform: translateZ(-1px) scale(3);
+  //   z-index: 5;
+  // }
+  

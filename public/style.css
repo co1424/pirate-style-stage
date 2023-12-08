@@ -102,6 +102,21 @@ main:focus {
 main h3 {
   color: var(--color-primary);
 }
+main ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  column-count: 3;
+}
+main li {
+  /* Optional styling for list items */
+  margin-bottom: 8px;
+  padding: 5px;
+  color: black;
+}
+main li:hover {
+  text-decoration: underline;
+}
 
 body::after {
   content: " ";
@@ -121,6 +136,43 @@ article section {
   align-items: flex-start;
   padding-top: 5vh;
   padding-bottom: 5vh;
+}
+article a {
+  text-decoration: none;
+  color: black;
+}
+article a:hover {
+  text-decoration: underline;
+  /* Add underline on hover if desired */
+}
+
+#guidelines h3 {
+  color: var(--color-secondary);
+}
+
+aside {
+  margin-left: auto;
+  width: 50%;
+}
+aside a {
+  text-decoration: none;
+  color: black;
+}
+aside a:hover {
+  text-decoration: underline;
+  /* Add underline on hover if desired */
+}
+
+#styles {
+  margin-right: auto;
+  width: 50%;
+}
+#styles a {
+  text-decoration: none;
+}
+#styles a:hover {
+  text-decoration: underline;
+  /* Add underline on hover if desired */
 }
 
 article .container,
@@ -152,11 +204,24 @@ header {
   place-items: center;
   background-repeat: repeat-x;
   background-position: 0 -38px, 17px -40px;
-  color: var(--color-primary);
+  color: var(--color-secondary);
   text-align: center;
 }
 header h2 {
   max-width: 30ch;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s ease-in-out, text-decoration 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+header a:hover {
+  text-decoration: underline;
+  /* Add underline on hover if desired */
+  color: #333;
+  /* Change color on hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add underline on hover if desired */
 }
 
 nav ul {
@@ -190,9 +255,8 @@ nav ul li {
 
 .page-footer {
   position: relative;
-  padding: 3rem 1rem;
-  background-color: var(--color-primary);
-  color: var(--color-light);
+  background-color: var(--color-background);
+  color: var(--color-text);
 }
 .page-footer::before {
   position: absolute;
@@ -200,9 +264,8 @@ nav ul li {
   width: 2em;
   transform: translate(-50%, -100%);
   background-color: var(--color-background);
-  color: var(--color-primary);
+  color: var(--color-text);
   font-size: 3rem;
-  content: "S";
 }
 .page-footer p:first-child {
   margin-top: 3rem;
@@ -211,10 +274,11 @@ nav ul li {
   text-align: center;
 }
 .page-footer p a {
-  color: inherit;
+  color: var(--color-text);
 }
 .page-footer ul {
   grid-template-columns: repeat(auto-fit, minmax(12ch, auto));
+  color: var(--color-text);
 }
 .page-footer .container > :last-child {
   margin-bottom: 0;
@@ -298,7 +362,8 @@ nav ul li {
 }
 
 .link-allstyles {
-  font-size: var(--font-size-h4);
+  font-size: var(--font-size-h2);
+  background-color: var(--color-primary);
 }
 @media (max-width: 400px) {
   .link-allstyles {

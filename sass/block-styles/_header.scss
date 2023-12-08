@@ -5,10 +5,22 @@ header {
   // padding: 10vh 2rem;
   background-repeat: repeat-x;
   background-position: 0 -38px, 17px -40px;
-  color: var(--color-primary);
+  color: var(--color-secondary);
   text-align: center;
 
   h2 {
     max-width: 30ch;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s ease-in-out, text-decoration 0.5s ease-in-out,
+      box-shadow 0.5s ease-in-out;
+  }
+  a:hover {
+    text-decoration: underline; /* Add underline on hover if desired */
+    color: #333; /* Change color on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add underline on hover if desired */
   }
 }

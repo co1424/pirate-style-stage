@@ -36,6 +36,26 @@ main {
   h3 {
     color: var(--color-primary);
   }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;  
+    column-count: 3; 
+
+  }
+  li {
+    /* Optional styling for list items */
+    
+    margin-bottom: 8px;
+    padding: 5px;
+    color: black;
+    
+  }
+
+  li:hover {
+    text-decoration: underline;
+  }
 }
 
 body::after{
@@ -95,7 +115,43 @@ article {
     padding-top: 5vh;
     padding-bottom: 5vh;
   }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    text-decoration: underline; /* Add underline on hover if desired */
+  }
 }
+
+#guidelines h3 {
+  color: var(--color-secondary)
+}
+
+aside {
+  margin-left: auto;
+  width: 50%;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    text-decoration: underline; /* Add underline on hover if desired */
+  }
+}
+
+#styles {
+  margin-right: auto;
+  width: 50%;
+  a{
+    text-decoration: none;
+    // color: black;
+  }
+  a:hover {
+    text-decoration: underline; /* Add underline on hover if desired */
+  }
+}
+
 
 article,
 .page-footer,

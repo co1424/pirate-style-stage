@@ -1,8 +1,16 @@
 .page-footer {
-  position: relative;
+  // position: relative;
   // padding: 3rem 1rem;
-  background-color: var(--color-background);
-  color: var(--color-text);
+  // background-color: var(--color-background);
+  // color: var(--color-text);
+
+  // 
+
+  background-color: $color-background;
+
+  background: 
+  $background-image repeat fixed;
+  background-size: 100%;
 
   &::before {
     position: absolute;
@@ -34,4 +42,46 @@
   .container > :last-child {
     margin-bottom: 0;
   }
+}
+
+footer::after {
+  background: 
+  $bigIsland 62% 85% no-repeat fixed, 
+  $left 32.5% 75% no-repeat, 
+  $line 33% 70% no-repeat, 
+  $lines 62% 84% no-repeat, 
+  $line3 40% 54% no-repeat, // con esta tengo que seguir
+  $lines2 65% 50% no-repeat, 
+  $lines4 44% 33% no-repeat, 
+  $right 67.2% 60% no-repeat, 
+  $small 60% 50% no-repeat, 
+  $top 43% 34.2% no-repeat, 
+  // $top2 top right no-repeat, 
+  $top3 35% 33% no-repeat, 
+  // $topbig 35% 34% no-repeat, 
+  $topRight 67% 45% no-repeat;
+  background-size: 
+  10%, //  $bigIsland
+  8%, //   $bean
+  // 15%, //  $bean
+  3%, //  $left
+  3%, //  $line
+  4%, //  $lines
+  3%, //  $line3
+  3%, //  $lines2
+  3%, //  $lines4
+  2%, //  $right
+  3%, //  $small
+  10%, //  $top
+  // 10%,//$top2
+  8%, //  $top3
+  5%, //  $topbig
+  5%,; // $topRight
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-3px) scale(11.1);
 }

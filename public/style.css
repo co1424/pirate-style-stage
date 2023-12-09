@@ -254,9 +254,9 @@ nav ul li {
 }
 
 .page-footer {
-  position: relative;
-  background-color: var(--color-background);
-  color: var(--color-text);
+  background-color: #FEDB96;
+  background: url("/images/background2.jpg") repeat fixed;
+  background-size: 100%;
 }
 .page-footer::before {
   position: absolute;
@@ -282,6 +282,17 @@ nav ul li {
 }
 .page-footer .container > :last-child {
   margin-bottom: 0;
+}
+
+footer::after {
+  background: url("/images/bigIsland.svg") 62% 85% no-repeat fixed, url("/images/left.svg") 32.5% 75% no-repeat, url("/images/line.svg") 33% 70% no-repeat, url("/images/lines.svg") 62% 84% no-repeat, url("/images/line3.svg") 40% 54% no-repeat, url("/images/lines2.svg") 65% 50% no-repeat, url("/images/lines4.svg") 44% 33% no-repeat, url("/images/right.svg") 67.2% 60% no-repeat, url("/images/small.svg") 60% 50% no-repeat, url("/images/top.svg") 43% 34.2% no-repeat, url("/images/top3.svg") 35% 33% no-repeat, url("/images/topRight.svg") 67% 45% no-repeat;
+  background-size: 10%, 8%, 3%, 3%, 4%, 3%, 3%, 3%, 2%, 3%, 10%, 8%, 5%, 5%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-3px) scale(11.1);
 }
 
 .skip-link {

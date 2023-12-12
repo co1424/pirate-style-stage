@@ -11,6 +11,7 @@
   background: 
   $background-image repeat fixed;
   background-size: 100%;
+  padding-bottom:40px;
 
   &::before {
     position: absolute;
@@ -42,6 +43,9 @@
   .container > :last-child {
     margin-bottom: 0;
   }
+}
+#files{
+  text-align: center;
 }
 
 footer::after {

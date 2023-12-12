@@ -25,9 +25,16 @@ body {
 main {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 80%;
   padding-top: 5vh;
   padding-bottom: 5vh;
+  z-index: 1;
+  position: relative;
+
+  * {
+    position: relative;
+    z-index: 1;
+  }
 
   &:focus {
     outline: none;
@@ -42,6 +49,7 @@ main {
     padding: 0;
     margin: 0;  
     column-count: 3; 
+    width: 80%;
 
   }
   li {
@@ -74,9 +82,9 @@ body::after{
   $lines4 44% 33% no-repeat, 
   $right 67.2% 60% no-repeat, 
   $small 60% 50% no-repeat, 
-  $top 43% 34.2% no-repeat, 
+  // $top 43% 34.2% no-repeat, 
   // $top2 top right no-repeat, 
-  $top3 35% 33% no-repeat, 
+  // $top3 35% 33% no-repeat, 
   // $topbig 35% 34% no-repeat, 
   $topRight 67% 45% no-repeat;
   
@@ -104,10 +112,20 @@ body::after{
   bottom: 0;
   left: 0;
   transform: translateZ(-3px) scale(11.1);
-
+  z-index: 0;
 }
 
 article {
+  
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  
+  * {
+    position: relative;
+    z-index: 1;
+    
+  }
   section {
     display: flex;
     flex-direction: column;
@@ -129,11 +147,30 @@ article {
 }
 
 aside {
-  margin-left: auto;
+  @media screen and (min-width: 1000px) {
+    width: 80%;
+    * {
+      // width: 70%;
+    }
+  }
+
+  
+  position: relative;
+  z-index: 1;
+  
+  * {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    text-align: center;
+    list-style: none;
+  }
+  margin: 0 auto;
   width: 50%;
   a{
     text-decoration: none;
     color: black;
+    width: 50%;
   }
   a:hover {
     text-decoration: underline; /* Add underline on hover if desired */
@@ -141,8 +178,15 @@ aside {
 }
 
 #styles {
+  position: relative;
+  z-index: 1;
+  
+  * {
+    position: relative;
+    z-index: 1;
+  }
   margin-right: auto;
-  width: 50%;
+  // width: 50%;
   a{
     text-decoration: none;
     // color: black;
@@ -157,7 +201,14 @@ article,
 .page-footer,
 #styles {
   .container {
-    width: 100%;
+    position: relative;
+    z-index: 1;
+    
+    * {
+      position: relative;
+      z-index: 1;
+    }
+    width: 80%;
     max-width: 80ch;
     margin-right: auto;
     margin-left: auto;
@@ -167,6 +218,13 @@ article,
 article,
 #styles {
   padding: 1rem;
+  position: relative;
+  z-index: 1;
+  
+  * {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 .page-footer ul,
@@ -176,4 +234,20 @@ article,
   padding: 0;
   grid-gap: 1em;
   list-style: none;
+  position: relative;
+  z-index: 1;
+  
+  * {
+    position: relative;
+    z-index: 1;
+  }
+}
+nav{
+  position: relative;
+  z-index: 1;
+  
+  * {
+    position: relative;
+    z-index: 1;
+  }
 }

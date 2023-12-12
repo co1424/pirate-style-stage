@@ -92,9 +92,15 @@ body {
 main {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 80%;
   padding-top: 5vh;
   padding-bottom: 5vh;
+  z-index: 1;
+  position: relative;
+}
+main * {
+  position: relative;
+  z-index: 1;
 }
 main:focus {
   outline: none;
@@ -107,6 +113,7 @@ main ul {
   padding: 0;
   margin: 0;
   column-count: 3;
+  width: 80%;
 }
 main li {
   /* Optional styling for list items */
@@ -120,7 +127,7 @@ main li:hover {
 
 body::after {
   content: " ";
-  background: url("/images/bigIsland.svg") 62% 85% no-repeat fixed, url("/images/bean.svg") 39% 60% no-repeat, url("/images/left.svg") 32.5% 75% no-repeat, url("/images/line.svg") 33% 70% no-repeat, url("/images/lines.svg") 62% 84% no-repeat, url("/images/line3.svg") 40% 54% no-repeat, url("/images/lines2.svg") 65% 50% no-repeat, url("/images/lines4.svg") 44% 33% no-repeat, url("/images/right.svg") 67.2% 60% no-repeat, url("/images/small.svg") 60% 50% no-repeat, url("/images/top.svg") 43% 34.2% no-repeat, url("/images/top3.svg") 35% 33% no-repeat, url("/images/topRight.svg") 67% 45% no-repeat;
+  background: url("/images/bigIsland.svg") 62% 85% no-repeat fixed, url("/images/bean.svg") 39% 60% no-repeat, url("/images/left.svg") 32.5% 75% no-repeat, url("/images/line.svg") 33% 70% no-repeat, url("/images/lines.svg") 62% 84% no-repeat, url("/images/line3.svg") 40% 54% no-repeat, url("/images/lines2.svg") 65% 50% no-repeat, url("/images/lines4.svg") 44% 33% no-repeat, url("/images/right.svg") 67.2% 60% no-repeat, url("/images/small.svg") 60% 50% no-repeat, url("/images/topRight.svg") 67% 45% no-repeat;
   background-size: 10%, 8%, 3%, 3%, 4%, 3%, 3%, 3%, 2%, 3%, 10%, 8%, 5%, 5%;
   position: absolute;
   top: 0;
@@ -128,8 +135,18 @@ body::after {
   bottom: 0;
   left: 0;
   transform: translateZ(-3px) scale(11.1);
+  z-index: 0;
 }
 
+article {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+article * {
+  position: relative;
+  z-index: 1;
+}
 article section {
   display: flex;
   flex-direction: column;
@@ -151,12 +168,27 @@ article a:hover {
 }
 
 aside {
-  margin-left: auto;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
   width: 50%;
+}
+@media screen and (min-width: 1000px) {
+  aside {
+    width: 80%;
+  }
+}
+aside * {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  text-align: center;
+  list-style: none;
 }
 aside a {
   text-decoration: none;
   color: black;
+  width: 50%;
 }
 aside a:hover {
   text-decoration: underline;
@@ -164,8 +196,13 @@ aside a:hover {
 }
 
 #styles {
+  position: relative;
+  z-index: 1;
   margin-right: auto;
-  width: 50%;
+}
+#styles * {
+  position: relative;
+  z-index: 1;
 }
 #styles a {
   text-decoration: none;
@@ -178,15 +215,30 @@ aside a:hover {
 article .container,
 .page-footer .container,
 #styles .container {
-  width: 100%;
+  position: relative;
+  z-index: 1;
+  width: 80%;
   max-width: 80ch;
   margin-right: auto;
   margin-left: auto;
+}
+article .container *,
+.page-footer .container *,
+#styles .container * {
+  position: relative;
+  z-index: 1;
 }
 
 article,
 #styles {
   padding: 1rem;
+  position: relative;
+  z-index: 1;
+}
+article *,
+#styles * {
+  position: relative;
+  z-index: 1;
 }
 
 .page-footer ul,
@@ -196,6 +248,22 @@ article,
   padding: 0;
   grid-gap: 1em;
   list-style: none;
+  position: relative;
+  z-index: 1;
+}
+.page-footer ul *,
+.features * {
+  position: relative;
+  z-index: 1;
+}
+
+nav {
+  position: relative;
+  z-index: 1;
+}
+nav * {
+  position: relative;
+  z-index: 1;
 }
 
 header {
@@ -206,6 +274,12 @@ header {
   background-position: 0 -38px, 17px -40px;
   color: var(--color-secondary);
   text-align: center;
+  position: relative;
+  z-index: 1;
+}
+header * {
+  position: relative;
+  z-index: 1;
 }
 header h2 {
   max-width: 30ch;
@@ -257,6 +331,7 @@ nav ul li {
   background-color: #FEDB96;
   background: url("/images/background2.jpg") repeat fixed;
   background-size: 100%;
+  padding-bottom: 40px;
 }
 .page-footer::before {
   position: absolute;
@@ -282,6 +357,10 @@ nav ul li {
 }
 .page-footer .container > :last-child {
   margin-bottom: 0;
+}
+
+#files {
+  text-align: center;
 }
 
 footer::after {

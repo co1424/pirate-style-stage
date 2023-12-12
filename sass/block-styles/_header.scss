@@ -7,6 +7,12 @@ header {
   background-position: 0 -38px, 17px -40px;
   color: var(--color-secondary);
   text-align: center;
+  position: relative;
+  z-index: 1;
+  * {
+    position: relative;
+    z-index: 1;
+  }
 
   h2 {
     max-width: 30ch;

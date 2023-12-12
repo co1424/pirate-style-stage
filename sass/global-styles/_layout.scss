@@ -64,12 +64,32 @@ main {
   li:hover {
     text-decoration: underline;
   }
+
+}
+@keyframes sway {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: $ship 83% 60% no-repeat fixed;
+  background-size: 10%;
+  animation: sway 4s ease-in-out infinite;
+  z-index: 0;
 }
 
 body::after{
   content: " ";
-  // background: $ship 82% 70% no-repeat fixed;
-  // background-size: 20%;
   background: 
   $bigIsland 62% 85% no-repeat fixed, 
   $bean 39% 60% no-repeat, 
@@ -77,7 +97,7 @@ body::after{
   $left 32.5% 75% no-repeat, 
   $line 33% 70% no-repeat, 
   $lines 62% 84% no-repeat, 
-  $line3 40% 54% no-repeat, // con esta tengo que seguir
+  $line3 40% 54% no-repeat, 
   $lines2 65% 50% no-repeat, 
   $lines4 44% 33% no-repeat, 
   $right 67.2% 60% no-repeat, 
@@ -89,6 +109,7 @@ body::after{
   $topRight 67% 45% no-repeat;
   
   background-size: 
+  
   10%, //  $bigIsland
   8%, //   $bean
   // 15%, //  $bean
